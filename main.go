@@ -12,7 +12,7 @@ import (
 	"github.com/blueimp/aws-smtp-relay/internal/relay"
 	pinpointrelay "github.com/blueimp/aws-smtp-relay/internal/relay/pinpoint"
 	sesrelay "github.com/blueimp/aws-smtp-relay/internal/relay/ses"
-	"github.com/mhale/smtpd"
+	"github.com/thomasdupas/smtpd"
 )
 
 var (

@@ -1,6 +1,7 @@
 package relay
 
 import (
+	"errors"
 	"net"
 	"regexp"
 
@@ -24,7 +25,7 @@ func (c Client) Send(
 	from string,
 	to []string,
 	data []byte,
-) {
+) error {
 	allowedRecipients, deniedRecipients, err := relay.FilterAddresses(
 		from,
 		to,
@@ -42,7 +43,11 @@ func (c Client) Send(
 			RawMessage:           &ses.RawMessage{Data: data},
 		})
 		relay.Log(origin, &from, allowedRecipients, err)
+		if err != nil {
+			return errors.New("failure")
+		}
 	}
+	return nil
 }
 
 // New creates a new client with a session.
