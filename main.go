@@ -8,10 +8,10 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/blueimp/aws-smtp-relay/internal/auth"
-	"github.com/blueimp/aws-smtp-relay/internal/relay"
-	pinpointrelay "github.com/blueimp/aws-smtp-relay/internal/relay/pinpoint"
-	sesrelay "github.com/blueimp/aws-smtp-relay/internal/relay/ses"
+	"github.com/thomasdupas/aws-smtp-relay/internal/auth"
+	"github.com/thomasdupas/aws-smtp-relay/internal/relay"
+	pinpointrelay "github.com/thomasdupas/aws-smtp-relay/internal/relay/pinpoint"
+	sesrelay "github.com/thomasdupas/aws-smtp-relay/internal/relay/ses"
 	"github.com/thomasdupas/smtpd"
 )
 

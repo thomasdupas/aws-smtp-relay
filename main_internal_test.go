@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	pinpointrelay "github.com/blueimp/aws-smtp-relay/internal/relay/pinpoint"
-	sesrelay "github.com/blueimp/aws-smtp-relay/internal/relay/ses"
+	pinpointrelay "github.com/thomasdupas/aws-smtp-relay/internal/relay/pinpoint"
+	sesrelay "github.com/thomasdupas/aws-smtp-relay/internal/relay/ses"
 )
 
 const certPEM = `-----BEGIN CERTIFICATE-----
